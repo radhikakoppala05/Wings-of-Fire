@@ -1,0 +1,130 @@
+.top-header {
+  display: flex;
+  border-width: 1px;
+}
+
+.name {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tag {
+  margin-top: -18px;
+  font-size: 12px;
+}
+.bell,
+.profile,
+.drone,
+.top-left,
+.top-middle,
+.top-right {
+  background-color: rgb(12, 12, 98);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+.top-middle {
+  width: 385px;
+}
+.top-left,
+.bell,
+.profile .top-right {
+  flex: 1;
+  flex-direction: column;
+}
+.top-middle {
+  padding-top: 0px;
+  flex: 2;
+}
+.top-right {
+  margin-right: 0px;
+  flex: 1;
+}
+.top-left {
+  flex: 1.5;
+}
+.profile-place {
+  margin-top: 40px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+.profile-name {
+  height: 50px;
+}
+.profile-name,
+.profile-place {
+  flex-direction: column;
+}
+.bell,
+.profile,
+.profile-name {
+  display: flex;
+  flex-direction: row;
+}
+.drone-pic {
+  width: 98px;
+  height: 60px;
+  margin-left: 6px;
+  margin-top: 4px;
+  margin-right: 5px;
+  border-radius: 7px;
+}
+.drone {
+  background-color: rgb(12, 12, 98);
+}
+.drone,
+.name {
+  flex-direction: row;
+}
+.profile-icon {
+  margin-top: 15px;
+  margin-right: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+.bell-icon {
+  width: 35px;
+  height: 33px;
+  margin-top: 20px;
+  margin-left: 95px;
+  position: relative;
+}
+.number {
+  color: white;
+  position: absolute;
+  border-radius: 100%;
+  width: 17px;
+  border-width: 0;
+  margin-left: 115px;
+  margin-top: 15px;
+  background-color: red;
+}
+.project-word,
+.project-area {
+  display: flex;
+  flex-direction: column;
+}
+.project-details,
+.status {
+  flex-direction: row;
+  flex: 1;
+}
+.time {
+  margin-top: -19px;
+  font-size: 12px;
+}
+.project-status {
+  color: rgb(113, 224, 113);
+}
+.status {
+  margin-left: 20px;
+}
+.project-area {
+  background-color: rgb(12, 12, 98);
+  color: white;
+  margin-top: -10px;
+  padding-right: 150px;
+  border-radius: 7px;
+}
