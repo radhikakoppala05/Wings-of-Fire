@@ -109,14 +109,14 @@
 .green-part {
   background-color: rgb(32, 231, 81);
   border-width: 0;
-  width: 90px;
+  width: 140px;
   height: 10px;
   border-radius: 4px;
 }
 .blank-part {
   background-color: rgb(15, 80, 176);
   border-width: 0;
-  width: 45px;
+  width: 60px;
   height: 10px;
   border-radius: 4px;
 }
