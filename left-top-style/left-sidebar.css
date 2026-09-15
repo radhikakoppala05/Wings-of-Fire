@@ -1,0 +1,79 @@
+.left_sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 1000px;
+  background-color: rgb(12, 12, 98);
+  margin-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.overview,
+.map,
+.road-width,
+.Confidence,
+.obstacles,
+.reports,
+.elevation,
+.history,
+.settings {
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+}
+.b1 {
+  background-color: rgb(12, 12, 98);
+  border-color: aqua;
+  border-radius: 4px;
+  border-width: 1px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.b1:hover {
+  cursor: pointer;
+  background-color: rgb(19, 119, 177);
+}
+.home-icon,
+.word1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: row;
+}
+.home-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.scale-icon,
+.shield-icon,
+.elevation-icon {
+  width: 50px;
+  height: 30px;
+}
+.map-icon {
+  width: 50px;
+  height: 40px;
+}
+.report-icon,
+.danger-icon,
+.settings-icon,
+.history-icon {
+  width: 45px;
+  height: 30px;
+}
+.left_bottom {
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-bottom: 0;
+  border-color: rgb(19, 119, 177);
+  border-width: 1px;
+  border-radius: 3px;
+}
+.drone-bottom {
+  border-radius: 5px;
+  width: 98px;
+  height: 55px;
+  margin-left: 20px;
+}
