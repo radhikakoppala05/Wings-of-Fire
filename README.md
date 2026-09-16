@@ -48,18 +48,8 @@ Low-confidence results can be flagged for human verification.
 
 ## System Workflow
 
-UAV/ Survey Data
-       ↓
-Stereo Camera + GPS + IMU
-       ↓
-AI + 3D Analysis
-       ↓
-Road Measurements
-       ↓
-Confidence Score
-       ↓
-Remote Manager Dashboard
-
+**UAV/ Survey Data → Stereo Camera + GPS + IMU → AI + 3D Analysis → Road Measurements → Confidence Score → Remote Manager Dashboard**
+  
 
 
 ## Road Environments
@@ -101,11 +91,11 @@ The current prototype demonstrates the proposed remote road-survey dashboard and
 
 ## Future Scope
 
-Real-time UAV processing
-GIS-based road mapping
-Automated road-condition assessment
-Predictive maintenance
-Large-scale road network monitoring
+- Real-time UAV processing
+- GIS-based road mapping
+- Automated road-condition assessment
+- Predictive maintenance
+- Large-scale road network monitoring
 
 
 
@@ -115,10 +105,10 @@ Team: **Wings Of Fire**
 Hackathon: Manipal Hackathon 2026 (M#26)
 
 Members: 
-Radhika
-Chhavi
-Dhanushka
-Smruthi
+1) Radhika
+2) Chhavi
+3) Dhanushka
+4) Smruthi
 
 
 ## Vision
