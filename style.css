@@ -1,614 +1,502 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #00182d;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+  background: #00182d;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
-
-
-
 
 .dashboard {
-    min-height: 100vh;
-    padding: 100px 3.5% 30px;
+  margin-top: -1090px;
+  padding: 100px 3.5% 30px;
+  margin-left: 105px;
+  margin-right: -40px;
 }
-
-
-
 
 .top-cards {
-    margin-left: 10%;
-    margin-right: 1%;
+  margin-left: 10%;
+  margin-right: 1%;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 
-    gap: 16px;
+  gap: 16px;
 }
-
-
-
 
 .stat-card {
-    height: 90px;
+  height: 90px;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    border: 1px solid;
+  border: 1px solid;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 12px 14px;
+  padding: 12px 14px;
 }
-
-
-
 
 .stat-icon {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 
-    min-width: 60px;
+  min-width: 60px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-right: 18px;
+  margin-right: 18px;
 
-    font-size: 31px;
-    font-weight: bold;
+  font-size: 31px;
+  font-weight: bold;
 }
 
-
-
-
 .blue-card {
-    background: linear-gradient(
-        135deg,
-        #002451,
-        #003c78
-    );
+  background: linear-gradient(135deg, #002451, #003c78);
 
-    border-color: #0875cf;
+  border-color: #0875cf;
 }
 
 .road-icon {
-    background: linear-gradient(
-        135deg,
-        #0877dc,
-        #064da1
-    );
+  background: linear-gradient(135deg, #0877dc, #064da1);
 }
 
-
-
-
 .green-card {
-    background: linear-gradient(
-        135deg,
-        #003d37,
-        #00574c
-    );
+  background: linear-gradient(135deg, #003d37, #00574c);
 
-    border-color: #008d77;
+  border-color: #008d77;
 }
 
 .check-icon {
-    background: linear-gradient(
-        135deg,
-        #00db91,
-        #00a96f
-    );
+  background: linear-gradient(135deg, #00db91, #00a96f);
 }
 
-
-
-
 .purple-card {
-    background: linear-gradient(
-        135deg,
-        #19145c,
-        #2a267d
-    );
+  background: linear-gradient(135deg, #19145c, #2a267d);
 
-    border-color: #583bd0;
+  border-color: #583bd0;
 }
 
 .target-icon {
-    background: linear-gradient(
-        135deg,
-        #7d39f1,
-        #4825b0
-    );
+  background: linear-gradient(135deg, #7d39f1, #4825b0);
 }
 
-
-
-
 .orange-card {
-    background: linear-gradient(
-        135deg,
-        #4e2f0b,
-        #633a0b
-    );
+  background: linear-gradient(135deg, #4e2f0b, #633a0b);
 
-    border-color: #a96714;
+  border-color: #a96714;
 }
 
 .warning-icon {
-    background: linear-gradient(
-        135deg,
-        #ff9b00,
-        #ed5c00
-    );
+  background: linear-gradient(135deg, #ff9b00, #ed5c00);
 }
 
-
-
-
 .red-card {
-    background: linear-gradient(
-        135deg,
-        #51132b,
-        #641a34
-    );
+  background: linear-gradient(135deg, #51132b, #641a34);
 
-    border-color: #b7355c;
+  border-color: #b7355c;
 }
 
 .danger-icon {
-    background: linear-gradient(
-        135deg,
-        #ff4560,
-        #df274b
-    );
+  background: linear-gradient(135deg, #ff4560, #df274b);
 }
 
-
-
 .stat-title {
-    font-size: 13px;
-    margin-bottom: 6px;
+  font-size: 13px;
+  margin-bottom: 6px;
 }
 
 .stat-value {
-    font-size: 23px;
-    font-weight: bold;
-    margin-bottom: 3px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .stat-subtitle {
-    font-size: 12px;
-    color: #d3dfeb;
+  font-size: 12px;
+  color: #d3dfeb;
 }
-
-
-
 
 .main-content {
-    margin-left: 10%;
-    margin-right: 1%;
-    margin-top: 18px;
+  margin-left: 10%;
+  margin-right: 1%;
+  margin-top: 18px;
 
-    display: grid;
+  display: grid;
 
-    grid-template-columns:
-        minmax(500px, 1fr)
-        390px;
+  grid-template-columns:
+    minmax(500px, 1fr)
+    390px;
 
-    gap: 14px;
+  gap: 14px;
 }
-
-
-
 
 .map-area {
-    min-height: 770px;
+  min-height: 770px;
 
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(0, 70, 110, 0.12),
-            transparent 55%
-        ),
-        #00182d;
+  background:
+    radial-gradient(circle at center, rgba(0, 70, 110, 0.12), transparent 55%),
+    #00182d;
 
-    border: 1px solid #075486;
+  border: 1px solid #075486;
 
-    border-radius: 7px;
+  border-radius: 7px;
 }
-
-
-
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 14px;
+  gap: 14px;
 }
-
-
-
 
 .panel {
-    background: rgba(0, 25, 46, 0.95);
+  background: rgba(0, 25, 46, 0.95);
 
-    border: 1px solid #075486;
+  border: 1px solid #075486;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
-
-
 .panel-header {
-    height: 42px;
+  height: 42px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 0 11px;
+  padding: 0 11px;
 
-    border-bottom: 1px solid #075486;
+  border-bottom: 1px solid #075486;
 }
 
 .panel-title {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .panel-icon {
-    margin-right: 8px;
-    font-size: 15px;
+  margin-right: 8px;
+  font-size: 15px;
 }
 
-
-
-
 .view-all-btn {
-    margin-left: auto;
+  margin-left: auto;
 
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 
-    color: #5bb3ee;
+  color: #5bb3ee;
 
-    font-size: 11px;
+  font-size: 11px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .view-all-btn:hover {
-    color: white;
+  color: white;
 }
 
-
-
-
 .count-badge {
-    margin-left: 9px;
+  margin-left: 9px;
 
-    padding: 3px 8px;
+  padding: 3px 8px;
 
-    border-radius: 20px;
+  border-radius: 20px;
 
-    font-size: 11px;
+  font-size: 11px;
 }
 
 .red-badge {
-    background: #f12e4c;
+  background: #f12e4c;
 }
 
 .yellow-badge {
-    background: #ffae19;
+  background: #ffae19;
 }
 
 .green-badge {
-    background: #10b993;
+  background: #10b993;
 }
 
-
-
-
 .priority-heading {
-    height: 31px;
+  height: 31px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 0 10px;
+  padding: 0 10px;
 
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .priority-heading span:first-child {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .high-heading {
-    color: #ff405c;
+  color: #ff405c;
 }
 
 .medium-heading {
-    color: #ffc12b;
+  color: #ffc12b;
 }
 
 .resolved-heading {
-    color: #1ce0b1;
+  color: #1ce0b1;
 }
-
-
 
 .alert-item {
-    min-height: 65px;
+  min-height: 65px;
 
-    border-top: 1px solid #06456e;
+  border-top: 1px solid #06456e;
 
-    padding: 8px 10px;
+  padding: 8px 10px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-
-
-
 .alert-circle {
-    width: 31px;
-    height: 31px;
+  width: 31px;
+  height: 31px;
 
-    min-width: 31px;
+  min-width: 31px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .red-circle {
-    background: #f43150;
+  background: #f43150;
 }
 
 .orange-circle {
-    background: #ff8508;
+  background: #ff8508;
 }
 
 .yellow-circle {
-    background: #ffb91c;
+  background: #ffb91c;
 }
 
 .green-circle {
-    background: #19c994;
+  background: #19c994;
 }
 
-
-
-
 .alert-details {
-    flex: 1;
+  flex: 1;
 }
 
 .alert-title {
-    font-size: 12px;
+  font-size: 12px;
 
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .alert-info {
-    color: #9bb2c7;
+  color: #9bb2c7;
 
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .alert-time {
-    align-self: flex-start;
+  align-self: flex-start;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    color: #8ba4ba;
+  color: #8ba4ba;
 
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
-
 .location-btn {
-    background: #00345d;
+  background: #00345d;
 
-    border: 1px solid #0875bd;
+  border: 1px solid #0875bd;
 
-    color: #65b9f1;
+  color: #65b9f1;
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    padding: 7px 9px;
+  padding: 7px 9px;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    margin-left: 8px;
+  margin-left: 8px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .location-btn:hover {
-    background: #075181;
-    color: white;
+  background: #075181;
+  color: white;
 }
 
-
 table {
-    width: 100%;
+  width: 100%;
 
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 th {
-    color: #98aec2;
+  color: #98aec2;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    font-weight: normal;
+  font-weight: normal;
 
-    text-align: left;
+  text-align: left;
 
-    padding: 9px 10px;
+  padding: 9px 10px;
 }
 
 td {
-    font-size: 11px;
+  font-size: 11px;
 
-    padding: 7px 10px;
+  padding: 7px 10px;
 
-    border-top: 1px solid #06456e;
+  border-top: 1px solid #06456e;
 }
 
 .obstacle-symbol {
-    margin-right: 6px;
+  margin-right: 6px;
 
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .confidence-high {
-    color: #1de0a5;
+  color: #1de0a5;
 
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .confidence-medium {
-    color: #ffd037;
+  color: #ffd037;
 
-    font-weight: bold;
+  font-weight: bold;
 }
 
-
-
-
 .quick-actions {
-    padding: 9px;
+  padding: 9px;
 
-    display: flex;
+  display: flex;
 
-    gap: 9px;
+  gap: 9px;
 }
 
 .action-btn {
-    height: 35px;
+  height: 35px;
 
-    flex: 1;
+  flex: 1;
 
-    background: #00213d;
+  background: #00213d;
 
-    border: 1px solid #075486;
+  border: 1px solid #075486;
 
-    border-radius: 6px;
+  border-radius: 6px;
 
-    color: #dcecff;
+  color: #dcecff;
 
-    font-size: 10px;
+  font-size: 10px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    gap: 5px;
+  gap: 5px;
 }
 
 .action-btn:hover {
-    background: #06385e;
+  background: #06385e;
 
-    border-color: #1687ce;
+  border-color: #1687ce;
 }
-
-
 
 @media (max-width: 1250px) {
+  .top-cards {
+    margin-left: 2%;
+  }
 
-    .top-cards {
-        margin-left: 2%;
-    }
+  .main-content {
+    margin-left: 2%;
+  }
 
-    .main-content {
-        margin-left: 2%;
-    }
+  .top-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .top-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .main-content {
+    grid-template-columns: 1fr;
+  }
 
-    .main-content {
-        grid-template-columns: 1fr;
-    }
+  .sidebar {
+    display: grid;
 
-    .sidebar {
-        display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .map-area {
-        min-height: 500px;
-    }
+  .map-area {
+    min-height: 500px;
+  }
 }
 
-
 @media (max-width: 750px) {
+  .dashboard {
+    padding: 25px 12px;
+  }
 
-    .dashboard {
-        padding: 25px 12px;
-    }
+  .top-cards {
+    margin: 0;
 
-    .top-cards {
-        margin: 0;
+    grid-template-columns: 1fr;
+  }
 
-        grid-template-columns: 1fr;
-    }
+  .main-content {
+    margin: 15px 0 0;
 
-    .main-content {
-        margin: 15px 0 0;
+    grid-template-columns: 1fr;
+  }
 
-        grid-template-columns: 1fr;
-    }
+  .sidebar {
+    display: flex;
+  }
 
-    .sidebar {
-        display: flex;
-    }
+  .map-area {
+    min-height: 350px;
+  }
 
-    .map-area {
-        min-height: 350px;
-    }
+  .alert-item {
+    flex-wrap: wrap;
+  }
 
-    .alert-item {
-        flex-wrap: wrap;
-    }
-
-    .location-btn {
-        margin-left: 43px;
-        margin-top: 6px;
-    }
+  .location-btn {
+    margin-left: 43px;
+    margin-top: 6px;
+  }
 }

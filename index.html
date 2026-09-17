@@ -1,536 +1,443 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Road Survey Dashboard</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="left-top-style/header-top.css" />
+    <link rel="stylesheet" href="left-top-style/left-sidebar.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="top-header">
+      <div class="drone">
+        <img class="drone-pic" src="pictures/drone.png" />
+      </div>
+      <div class="top-left">
+        <p class="name">Road Vision</p>
+        <p class="tag">Real Time Monitoring and AI-powered Road survey</p>
+      </div>
+      <div class="top-middle">
+        <div class="project-details">
+          <p class="project-word">Project</p>
+          <div>
+            <button class="project-area">NH-740(Karnataka)</button>
+          </div>
+        </div>
+        <img class="point" src="pictures/green-dot.png" />
+        <div class="status">
+          <p class="project-status">Survey completed</p>
+          <p class="time">[Last Updated: 17 May 2026,14:31]</p>
+        </div>
+      </div>
+      <div class="top-right">
+        <div class="bell">
+          <img class="bell-icon" src="pictures/bell.png" />
+          <button class="number">3</button>
+        </div>
+        <div class="profile">
+          <img class="profile-icon" src="pictures/profile-pic.png" />
+        </div>
+        <p class="profile-name">Supervisor</p>
+        <p class="profile-place">Govt.of India</p>
+      </div>
+    </div>
+    <div class="left_sidebar">
+      <button class="b1">
+        <div class="overview">
+          <img class="home-icon" src="pictures/home.png" />
+          <p class="word1">Overview</p>
+        </div>
+      </button>
+      <button class="b1">
+        <div class="map">
+          <img class="map-icon" src="pictures/map.png" />
+          <p class="word1">Map View</p>
+        </div>
+      </button>
+
+      <button class="b1">
+        <div class="road-width">
+          <img class="scale-icon" src="pictures/scale.png" />
+          <p class="word1">Road Width</p>
+        </div>
+      </button>
+
+      <button class="b1">
+        <div class="Confidence">
+          <img class="shield-icon" src="pictures/shield.png" />
+          <p class="word1">Confidence Map</p>
+        </div>
+      </button>
+
+      <button class="b1">
+        <div class="obstacles">
+          <img class="danger-icon" src="pictures/danger.png" />
+          <p class="word1">Obstacles</p>
+        </div>
+      </button>
+
+      <button class="b1">
+        <div class="reports">
+          <img class="report-icon" src="pictures/reports.png" />
+          <p class="word1">Reports</p>
+        </div>
+      </button>
+
+      <button class="b1">
+        <div class="elevation">
+          <img class="elevation-icon" src="pictures/elevation.png" />
+          <p class="word1">Elevation</p>
+        </div>
+      </button>
+      <button class="b1">
+        <div class="history">
+          <img class="history-icon" src="pictures/history.png" />
+          <p class="word1">History</p>
+        </div>
+      </button>
+      <button class="b1">
+        <div class="settings">
+          <img class="settings-icon" src="pictures/settings.png" />
+          <p class="word1">Settings</p>
+        </div>
+      </button>
+      <div class="left_bottom">
+        <img class="drone-bottom" src="pictures/drone.png" />
+        <div class="below-drone">
+          <img class="point-bottom" src="pictures/green-dot.png" />
+          <p style="color: white; font-weight: bold">Drone Status</p>
+        </div>
+        <div class="battery-status">
+          <p style="color: white">Battery</p>
+          <p style="margin-left: 100px; color: white">72%</p>
+        </div>
+        <div class="battery-bar">
+          <button class="green-part"></button>
+          <button class="blank-part"></button>
+        </div>
+        <div class="gps-status">
+          <p style="color: white">GPS</p>
+          <img class="signal-icon" src="pictures/strong-increase.png" />
+          <p style="color: white">Strong</p>
+        </div>
+        <div class="camera-status">
+          <p style="color: white">Camera</p>
+
+          <img class="point-bottom2" src="pictures/green-dot.png" />
+          <p style="color: white">Active</p>
+        </div>
+        <div class="distance-status">
+          <p style="color: white">Distance Covered</p>
+          <p class="Distance">18.2km</p>
+        </div>
+      </div>
+    </div>
 
     <div class="dashboard">
+      <div class="top-cards">
+        <!-- Total Road Length -->
+        <div class="stat-card blue-card">
+          <div class="stat-icon road-icon">🛣</div>
 
-        
-
-        <div class="top-cards">
-
-            <!-- Total Road Length -->
-            <div class="stat-card blue-card">
-
-                <div class="stat-icon road-icon">
-                    🛣
-                </div>
-
-                <div class="stat-content">
-                    <div class="stat-title">Total Road Length</div>
-                    <div class="stat-value">24.6 km</div>
-                    <div class="stat-subtitle">(Project)</div>
-                </div>
-
-            </div>
-
-
-           
-            <div class="stat-card green-card">
-
-                <div class="stat-icon check-icon">
-                    ✓
-                </div>
-
-                <div class="stat-content">
-                    <div class="stat-title">Surveyed Length</div>
-                    <div class="stat-value">18.2 km</div>
-                    <div class="stat-subtitle">(74%)</div>
-                </div>
-
-            </div>
-
-
-           
-            <div class="stat-card purple-card">
-
-                <div class="stat-icon target-icon">
-                    ◎
-                </div>
-
-                <div class="stat-content">
-                    <div class="stat-title">Average Confidence</div>
-                    <div class="stat-value">93%</div>
-                    <div class="stat-subtitle">(Good)</div>
-                </div>
-
-            </div>
-
-
-       
-            <div class="stat-card orange-card">
-
-                <div class="stat-icon warning-icon">
-                    !
-                </div>
-
-                <div class="stat-content">
-                    <div class="stat-title">Obstacles Detected</div>
-                    <div class="stat-value">7</div>
-                    <div class="stat-subtitle">(Trees, Rocks, Debris)</div>
-                </div>
-
-            </div>
-
-
-            
-            <div class="stat-card red-card">
-
-                <div class="stat-icon danger-icon">
-                    !
-                </div>
-
-                <div class="stat-content">
-                    <div class="stat-title">Low Confidence Areas</div>
-                    <div class="stat-value">4</div>
-                    <div class="stat-subtitle">(Needs Manual Review)</div>
-                </div>
-
-            </div>
-
+          <div class="stat-content">
+            <div class="stat-title">Total Road Length</div>
+            <div class="stat-value">24.6 km</div>
+            <div class="stat-subtitle">(Project)</div>
+          </div>
         </div>
 
+        <div class="stat-card green-card">
+          <div class="stat-icon check-icon">✓</div>
 
-        
+          <div class="stat-content">
+            <div class="stat-title">Surveyed Length</div>
+            <div class="stat-value">18.2 km</div>
+            <div class="stat-subtitle">(74%)</div>
+          </div>
+        </div>
 
-        <div class="main-content">
+        <div class="stat-card purple-card">
+          <div class="stat-icon target-icon">◎</div>
 
-          
+          <div class="stat-content">
+            <div class="stat-title">Average Confidence</div>
+            <div class="stat-value">93%</div>
+            <div class="stat-subtitle">(Good)</div>
+          </div>
+        </div>
 
-            <div class="map-area" id="mapArea">
+        <div class="stat-card orange-card">
+          <div class="stat-icon warning-icon">!</div>
 
-                <!--
+          <div class="stat-content">
+            <div class="stat-title">Obstacles Detected</div>
+            <div class="stat-value">7</div>
+            <div class="stat-subtitle">(Trees, Rocks, Debris)</div>
+          </div>
+        </div>
+
+        <div class="stat-card red-card">
+          <div class="stat-icon danger-icon">!</div>
+
+          <div class="stat-content">
+            <div class="stat-title">Low Confidence Areas</div>
+            <div class="stat-value">4</div>
+            <div class="stat-subtitle">(Needs Manual Review)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="map-area" id="mapArea">
+          <!--
                     This area is intentionally blank.
                     Your actual map can be added here later.
                 -->
-
-            </div>
-
-
-
-            <div class="sidebar">
-
-
-              
-                <div class="panel alerts-panel">
-
-                    <div class="panel-header">
-
-                        <div class="panel-title">
-                            <span class="panel-icon">☑</span>
-                            Priority Alerts
-                            <span class="count-badge red-badge">2</span>
-                        </div>
-
-                        <button class="view-all-btn">
-                            View All →
-                        </button>
-
-                    </div>
-
-
-                   
-
-                    <div class="priority-heading high-heading">
-                        <span>⚠</span>
-                        High Priority
-                    </div>
-
-
-                   
-
-                    <div class="alert-item">
-
-                        <div class="alert-circle red-circle">
-                            !
-                        </div>
-
-                        <div class="alert-details">
-
-                            <div class="alert-title">
-                                Low confidence at KM 13.7
-                            </div>
-
-                            <div class="alert-info">
-                                Confidence: 58% | Width: 4.72 m
-                            </div>
-
-                        </div>
-
-                        <div class="alert-time">
-                            12:21
-                        </div>
-
-                        <button class="location-btn">
-                            View Location
-                        </button>
-
-                    </div>
-
-
-                   
-
-                    <div class="alert-item">
-
-                        <div class="alert-circle orange-circle">
-                            !
-                        </div>
-
-                        <div class="alert-details">
-
-                            <div class="alert-title">
-                                Road width below threshold at KM 18.2
-                            </div>
-
-                            <div class="alert-info">
-                                Width: 4.61 m | Required: 5.0 m
-                            </div>
-
-                        </div>
-
-                        <div class="alert-time">
-                            11:46
-                        </div>
-
-                        <button class="location-btn">
-                            View Location
-                        </button>
-
-                    </div>
-
-
-
-                    <div class="priority-heading medium-heading">
-
-                        <span>⚠</span>
-                        Medium Priority
-
-                        <span class="count-badge yellow-badge">
-                            3
-                        </span>
-
-                    </div>
-
-
-                   
-
-                    <div class="alert-item">
-
-                        <div class="alert-circle yellow-circle">
-                            ⚠
-                        </div>
-
-                        <div class="alert-details">
-
-                            <div class="alert-title">
-                                Obstacle detected at KM 8.7
-                            </div>
-
-                            <div class="alert-info">
-                                Rock | Distance: 1.1 m | Confidence: 91%
-                            </div>
-
-                        </div>
-
-                        <div class="alert-time">
-                            10:32
-                        </div>
-
-                    </div>
-
-
-                   
-
-                    <div class="alert-item">
-
-                        <div class="alert-circle orange-circle">
-                            !
-                        </div>
-
-                        <div class="alert-details">
-
-                            <div class="alert-title">
-                                Low confidence at KM 21.3
-                            </div>
-
-                            <div class="alert-info">
-                                Confidence: 67% | Width: 4.98 m
-                            </div>
-
-                        </div>
-
-                        <div class="alert-time">
-                            09:15
-                        </div>
-
-                    </div>
-
-
-                   
-
-                    <div class="alert-item">
-
-                        <div class="alert-circle yellow-circle">
-                            ⚠
-                        </div>
-
-                        <div class="alert-details">
-
-                            <div class="alert-title">
-                                Obstacle detected at KM 22.8
-                            </div>
-
-                            <div class="alert-info">
-                                Tree | Distance: 2.7 m | Confidence: 88%
-                            </div>
-
-                        </div>
-
-                        <div class="alert-time">
-                            08:40
-                        </div>
-
-                    </div>
-
-
-                    
-
-                    <div class="priority-heading resolved-heading">
-
-                        <span>♻</span>
-                        Resolved
-
-                        <span class="count-badge green-badge">
-                            5
-                        </span>
-
-                    </div>
-
-
-                    
-
-                    <div class="alert-item">
-
-                        <div class="alert-circle green-circle">
-                            ✓
-                        </div>
-
-                        <div class="alert-details">
-
-                            <div class="alert-title">
-                                Road width OK at KM 6.5
-                            </div>
-
-                            <div class="alert-info">
-                                Width: 5.18 m | Confidence: 96%
-                            </div>
-
-                        </div>
-
-                        <div class="alert-time">
-                            08:12
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-               
-
-                <div class="panel obstacle-panel">
-
-                    <div class="panel-header">
-
-                        <div class="panel-title">
-                            <span class="panel-icon">♟</span>
-                            Obstacle Detection
-                        </div>
-
-                        <button class="view-all-btn">
-                            View All →
-                        </button>
-
-                    </div>
-
-
-                    <table>
-
-                        <thead>
-
-                            <tr>
-                                <th>Type</th>
-                                <th>Location (KM)</th>
-                                <th>Distance</th>
-                                <th>Confidence</th>
-                            </tr>
-
-                        </thead>
-
-
-                        <tbody>
-
-                            <tr>
-                                <td>
-                                    <span class="obstacle-symbol tree">
-                                        🌳
-                                    </span>
-                                    Tree
-                                </td>
-
-                                <td>4.2</td>
-                                <td>2.3 m</td>
-
-                                <td class="confidence-high">
-                                    96%
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <span class="obstacle-symbol">
-                                        ◉
-                                    </span>
-                                    Rock
-                                </td>
-
-                                <td>8.7</td>
-                                <td>1.1 m</td>
-
-                                <td class="confidence-medium">
-                                    91%
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <span class="obstacle-symbol">
-                                        🪨
-                                    </span>
-                                    Debris
-                                </td>
-
-                                <td>12.1</td>
-                                <td>3.4 m</td>
-
-                                <td class="confidence-medium">
-                                    87%
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <span class="obstacle-symbol tree">
-                                        🌳
-                                    </span>
-                                    Tree
-                                </td>
-
-                                <td>18.6</td>
-                                <td>2.7 m</td>
-
-                                <td class="confidence-medium">
-                                    88%
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <span class="obstacle-symbol">
-                                        ◉
-                                    </span>
-                                    Rock
-                                </td>
-
-                                <td>22.3</td>
-                                <td>1.5 m</td>
-
-                                <td class="confidence-high">
-                                    93%
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <span class="obstacle-symbol">
-                                        🪨
-                                    </span>
-                                    Debris
-                                </td>
-
-                                <td>23.7</td>
-                                <td>2.1 m</td>
-
-                                <td class="confidence-medium">
-                                    89%
-                                </td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-
-              
-
-                <div class="panel quick-panel">
-
-                    <div class="panel-header">
-
-                        <div class="panel-title">
-                            <span class="panel-icon">⚙</span>
-                            Quick Actions
-                        </div>
-
-                    </div>
-
-
-                    <div class="quick-actions">
-
-                        <button class="action-btn report-btn">
-                            📄
-                            <span>Generate Report</span>
-                        </button>
-
-                        <button class="action-btn csv-btn">
-                            📋
-                            <span>Export CSV</span>
-                        </button>
-
-                        <button class="action-btn pdf-btn">
-                            📑
-                            <span>Download PDF</span>
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
 
+        <div class="sidebar">
+          <div class="panel alerts-panel">
+            <div class="panel-header">
+              <div class="panel-title">
+                <span class="panel-icon">☑</span>
+                Priority Alerts
+                <span class="count-badge red-badge">2</span>
+              </div>
+
+              <button class="view-all-btn">View All →</button>
+            </div>
+
+            <div class="priority-heading high-heading">
+              <span>⚠</span>
+              High Priority
+            </div>
+
+            <div class="alert-item">
+              <div class="alert-circle red-circle">!</div>
+
+              <div class="alert-details">
+                <div class="alert-title">Low confidence at KM 13.7</div>
+
+                <div class="alert-info">Confidence: 58% | Width: 4.72 m</div>
+              </div>
+
+              <div class="alert-time">12:21</div>
+
+              <button class="location-btn">View Location</button>
+            </div>
+
+            <div class="alert-item">
+              <div class="alert-circle orange-circle">!</div>
+
+              <div class="alert-details">
+                <div class="alert-title">
+                  Road width below threshold at KM 18.2
+                </div>
+
+                <div class="alert-info">Width: 4.61 m | Required: 5.0 m</div>
+              </div>
+
+              <div class="alert-time">11:46</div>
+
+              <button class="location-btn">View Location</button>
+            </div>
+
+            <div class="priority-heading medium-heading">
+              <span>⚠</span>
+              Medium Priority
+
+              <span class="count-badge yellow-badge"> 3 </span>
+            </div>
+
+            <div class="alert-item">
+              <div class="alert-circle yellow-circle">⚠</div>
+
+              <div class="alert-details">
+                <div class="alert-title">Obstacle detected at KM 8.7</div>
+
+                <div class="alert-info">
+                  Rock | Distance: 1.1 m | Confidence: 91%
+                </div>
+              </div>
+
+              <div class="alert-time">10:32</div>
+            </div>
+
+            <div class="alert-item">
+              <div class="alert-circle orange-circle">!</div>
+
+              <div class="alert-details">
+                <div class="alert-title">Low confidence at KM 21.3</div>
+
+                <div class="alert-info">Confidence: 67% | Width: 4.98 m</div>
+              </div>
+
+              <div class="alert-time">09:15</div>
+            </div>
+
+            <div class="alert-item">
+              <div class="alert-circle yellow-circle">⚠</div>
+
+              <div class="alert-details">
+                <div class="alert-title">Obstacle detected at KM 22.8</div>
+
+                <div class="alert-info">
+                  Tree | Distance: 2.7 m | Confidence: 88%
+                </div>
+              </div>
+
+              <div class="alert-time">08:40</div>
+            </div>
+
+            <div class="priority-heading resolved-heading">
+              <span>♻</span>
+              Resolved
+
+              <span class="count-badge green-badge"> 5 </span>
+            </div>
+
+            <div class="alert-item">
+              <div class="alert-circle green-circle">✓</div>
+
+              <div class="alert-details">
+                <div class="alert-title">Road width OK at KM 6.5</div>
+
+                <div class="alert-info">Width: 5.18 m | Confidence: 96%</div>
+              </div>
+
+              <div class="alert-time">08:12</div>
+            </div>
+          </div>
+
+          <div class="panel obstacle-panel">
+            <div class="panel-header">
+              <div class="panel-title">
+                <span class="panel-icon">♟</span>
+                Obstacle Detection
+              </div>
+
+              <button class="view-all-btn">View All →</button>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Location (KM)</th>
+                  <th>Distance</th>
+                  <th>Confidence</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="obstacle-symbol tree"> 🌳 </span>
+                    Tree
+                  </td>
+
+                  <td>4.2</td>
+                  <td>2.3 m</td>
+
+                  <td class="confidence-high">96%</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span class="obstacle-symbol"> ◉ </span>
+                    Rock
+                  </td>
+
+                  <td>8.7</td>
+                  <td>1.1 m</td>
+
+                  <td class="confidence-medium">91%</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span class="obstacle-symbol"> 🪨 </span>
+                    Debris
+                  </td>
+
+                  <td>12.1</td>
+                  <td>3.4 m</td>
+
+                  <td class="confidence-medium">87%</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span class="obstacle-symbol tree"> 🌳 </span>
+                    Tree
+                  </td>
+
+                  <td>18.6</td>
+                  <td>2.7 m</td>
+
+                  <td class="confidence-medium">88%</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span class="obstacle-symbol"> ◉ </span>
+                    Rock
+                  </td>
+
+                  <td>22.3</td>
+                  <td>1.5 m</td>
+
+                  <td class="confidence-high">93%</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <span class="obstacle-symbol"> 🪨 </span>
+                    Debris
+                  </td>
+
+                  <td>23.7</td>
+                  <td>2.1 m</td>
+
+                  <td class="confidence-medium">89%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel quick-panel">
+            <div class="panel-header">
+              <div class="panel-title">
+                <span class="panel-icon">⚙</span>
+                Quick Actions
+              </div>
+            </div>
+
+            <div class="quick-actions">
+              <button class="action-btn report-btn">
+                📄
+                <span>Generate Report</span>
+              </button>
+
+              <button class="action-btn csv-btn">
+                📋
+                <span>Export CSV</span>
+              </button>
+
+              <button class="action-btn pdf-btn">
+                📑
+                <span>Download PDF</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
