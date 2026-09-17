@@ -503,9 +503,17 @@ td {
 
 .graph {
   margin-top: -1000px;
-  width: 630px;
-  height: 300px;
-  margin-left: 300px;
+  width: 960px;
+  height: 310px;
+  margin-left: 358px;
   margin-right: 100px;
   margin-bottom: 60px;
+}
+.output {
+  margin-left: 360px;
+  margin-top: -940px;
+}
+.output-pic {
+  width: 960px;
+  height: 550px;
 }
