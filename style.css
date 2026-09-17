@@ -500,3 +500,12 @@ td {
     margin-top: 6px;
   }
 }
+
+.graph {
+  margin-top: -1000px;
+  width: 630px;
+  height: 300px;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-bottom: 60px;
+}
