@@ -10,7 +10,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .tag {
-  margin-top: -18px;
+  margin-top: 2px;
   font-size: 12px;
 }
 .bell,
@@ -52,6 +52,7 @@
 }
 .profile-name {
   height: 50px;
+  margin-top: 25px;
 }
 .profile-name,
 .profile-place {
@@ -106,6 +107,7 @@
 .project-area {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 .project-details,
 .status {
@@ -113,7 +115,7 @@
   flex: 1;
 }
 .time {
-  margin-top: -19px;
+  margin-top: 5px;
   font-size: 12px;
 }
 .project-status {
@@ -121,11 +123,12 @@
 }
 .status {
   margin-left: 20px;
+  margin-top: 20px;
 }
 .project-area {
-  background-color: rgb(12, 12, 98);
+  background-color: #00182d;
   color: white;
-  margin-top: -10px;
+  margin-top: 4px;
   padding-right: 150px;
   border-radius: 7px;
 }
